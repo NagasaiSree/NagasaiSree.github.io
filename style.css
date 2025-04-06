@@ -494,8 +494,16 @@ h3{
     flex-direction:column;
   }
   .qeheader{
+    display:flex;
     align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
   }
+  .qeheader img{
+    display: inline-block;
+    width: 80%;
+  } 
 }
 .qeheader{
   background-color:#fff3f3;
