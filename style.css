@@ -1,0 +1,732 @@
+*{
+  margin: 0;
+  padding:0;
+  font-family: 'Merriweather', static;
+}
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../OneDrive\ -\ Amrita\ Vishwa\ Vidyapeetham-\ Chennai\ Campus/Pictures/thekitchen.jpg);
+  background-position: center;
+  background-size: contain;
+  position: relative;
+}
+
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+  width:190px;
+}
+.nav-links{
+  flex:1;
+  text-align:right;
+}
+.nav-links ul li{
+  list-style:none;
+  display: inline-block;
+  padding:  8px 12px;
+  position: relative;
+}
+.nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #DBAAAC;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width:100%;
+}
+.text-box{
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align:center;
+}
+.text-box h1{
+  font-size: 42px;
+}
+.text-box p{
+  margin: 10px 0 40px;
+  font-size: 15px;
+  color: #fff;
+}
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn:hover{
+  border:1px solid #b38486;
+  background:#b38486;
+  transition:1s;
+}
+nav .fa-solid{
+  display:none;
+}
+@media(max-width: 700px){
+  .header{
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .text-box h1{
+    font: size 20px;
+  }
+  .nav-links ul li{
+    display:block;
+  }
+  .nav-links ul li a{
+    color: #fff3f3;
+  }
+  .nav-links{
+    position: absolute;
+    background: #b38486;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition:1s;
+  }
+  nav .fa-solid{
+    display: block;
+    color: #fff3f3;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul{
+    padding: 13px;
+  }
+  
+}
+/*---recipe-category---*/
+
+.recipe{
+  width:80%;
+  margin:auto;
+  text-align:center;
+  padding-top:100px;                                                                                                                                                                                                                                                                                                    
+}
+
+h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+.recipe p{
+  color:#777;
+  font-size:20px;
+  line-height:22px;
+  font-weight:300;
+  padding:10px;
+}
+
+.row{
+  margin-top:8%;
+  display:flex;
+  justify-content:space-between;
+  width:100%;
+}
+.row2{
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+ .recipe-cat{
+  flex-basis:25%;
+  background: #fff3f3;
+  border-radius: 5px;
+  margin-bottom: 5%;
+  padding: 10px 12px;
+  box-sizing: border-box;
+
+}
+
+.recipe img{
+  width:100%;
+}
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.recipe-cat:hover{
+  box-shadow:0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width:700px){
+  .row{
+    flex-direction:column;
+  }
+  .row2{
+    flex-direction:column;
+  }
+  .tipsrow{
+    flex-direction: column;
+  }
+  .trendrow{
+    flex-direction: column;
+  }
+}
+
+/*----cooking-tips------*/
+
+.tipsrow{
+  margin-top:8%;
+  display: flex;
+  justify-content:space-evenly;
+  width:100%;
+  flex-wrap:wrap;
+}
+.tips{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+ 
+}
+
+.tips p{
+  font-size: 12px;
+  color:#777;
+}
+.tips-col{
+  flex-basis: 20%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 10px 12px;
+  box-sizing:border-box;
+}
+
+.tips img{
+  width:70%;
+  height:70%;
+}
+
+h3{
+  text-align: center;
+  font-weight: 500;
+  margin: 5px 0;
+}
+.tips-col:hover{
+  box-shadow:0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/*-----specialdiets-----*/
+
+.specialdiets{
+  width:80%;
+  margin:auto;
+  text-align:center;
+  padding-top:100px;
+}
+.diets-col{
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing:border-box;
+}
+.specialdiets p{
+  color:#777;
+  font-size: 20px;;
+}
+.specialdiets img{
+  width:100%;
+}
+.diets-col:hover{
+  box-shadow:0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/*----trending----*/
+
+.trending{
+  width:80%;
+  margin:auto;
+  text-align:center;
+  padding-top:100px;
+}
+
+.trend-col{
+  flex-basis: 22%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 10px 12px;
+  box-sizing:border-box;
+}
+
+.trendrow{
+  margin-top:8%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-evenly;
+  width:100%;
+  
+}
+
+.trending img{
+ width:80%;
+ height:80%;
+ vertical-align: middle;
+}
+.trend-col:hover{
+  box-shadow:0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/*---seasonal-spotlight---*/
+
+.seasonal{
+  width:80%;
+  margin:auto;
+  text-align:center;
+  padding-top:100px;
+}
+
+.seasonal-col{
+  flex-basis: 27%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing:border-box;
+}
+
+.seasonal img{
+  width:100%;
+}
+
+.seasonal-col:hover{
+  box-shadow:0 0 20px 0px rgba(0,0,0,0.2);
+}
+/*------footer------*/
+
+.footer{
+  width:100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.footer h4{
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+.footer i{
+  padding: 10px;
+}
+
+/*----------------About--us----------------*/
+.sub-header{
+  height: 30vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../OneDrive\ -\ Amrita\ Vishwa\ Vidyapeetham-\ Chennai\ Campus/Pictures/Banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.about-us{
+  display: flex;
+  width:80%;
+  margin: auto;
+  padding-top: 50px;
+}
+.about-col{
+  flex-basis: 50%;
+  
+}
+.about-col img{
+  margin-left: 30%;
+  width: 60%;
+  padding-top: 5%;
+}
+.about-col h1{
+  padding-top: 15%;
+  padding-bottom: 15px;
+  color:#b38486;
+}
+.about-col p{
+  padding: 15px 0 25px;
+  color:#777;
+}
+.about-col form {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  background: #fff3f3;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  margin:10px;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+}
+
+.about-col label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.about-col input,
+.about-col textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.about-col button {
+  background-color: #b38486;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.about-col button:hover {
+  background-color: #944f56;
+}
+@media(max-width:700px){
+  .about-us{
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-col{
+    width: 100%;
+  }
+  .about-col img{
+    width:100%;
+  }
+  .about-col form{
+    margin:0 auto;
+  }
+
+}
+.red-btn{
+  border:1px solid #b38486;
+  background: transparent;
+  color: #b38486;
+}
+.red-btn:hover{
+  color: #fff;
+}
+
+
+/*----------Quick and Easy Recipies page----------*/
+
+.top{
+  background-color: #DBAAAC;
+}
+
+.nav2-links{
+  flex:1;
+  text-align:right;
+}
+.nav2-links ul li{
+  list-style:none;
+  display: inline-block;
+  padding:  8px 12px;
+  position: relative;
+}
+.nav2-links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav2-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav2-links ul li:hover::after{
+  width:100%;
+}
+@media(max-width:700px){
+  .nav2-links{
+    position: absolute;
+    background: #b38486;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition:1s;
+  }
+  .nav2-links ul li{
+    display:block;
+  }
+  .nav2-links ul li a{
+    color: #fff3f3;
+  }
+  .index{
+    flex-direction:column;
+  }
+  .qeheader{
+    align-items: center;
+  }
+}
+.qeheader{
+  background-color:#fff3f3;
+  width: 100%;
+  padding: 40px 0;
+  text-align:center;
+  position:relative;
+}
+.qeheader h1{
+  text-align: center;
+  padding-top: 55px;
+  color:#b38486;
+}
+.qeheader img{
+  float: left;
+  width: 300px;
+  padding-inline: 55px;
+  position:relative;
+}
+.qeheader p{
+  margin: 35px 20px 40px;
+  font-size: 15px;
+  color: #777;
+  padding-bottom: 2%;
+  
+}
+.index{
+  position: relative;
+  margin-top:5%;
+  display:flex;
+  justify-content:space-between;
+  width:100%;
+}
+
+.container{
+  width:350px;
+  height: 400px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 50px;
+}
+.card{
+  height:100%;
+  width: 100%;
+  position: absolute;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+.container:hover > .card{
+  cursor: pointer;
+  transform:rotateY(180deg);
+  box-shadow:0 0 20px 0px rgba(0,0,0,0.2);
+}
+.front, .back{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.front{
+  background-color: #b38486;
+  text-align: center;
+  overflow: hidden; 
+  align-items: center;
+  justify-content: space-between;
+}
+.front img{
+  width: 80%;
+  height: 80%;
+  object-position: center bottom;
+  flex-basis: 25%;
+  object-fit: cover;
+}
+.front p{
+  color: #fff;
+  margin-top: 10px;
+  padding: 10px;
+
+}
+.back{
+  background-color: #fff;
+  transform: rotateY(180deg);
+  color:#b38486;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.back a{
+  color:#b38486;
+}
+
+/*------Recipe page--------*/
+
+.recipage{
+  background-color:#fff3f3;
+  width: 100%;
+  padding: 40px 0;
+  text-align:center;
+  position:relative;
+}
+.recipage h1{
+  text-align: center;
+  padding-top: 55px;
+  color:#b38486;
+}
+.recipage img{
+  float: left;
+  width: 250px;
+  padding-inline: 65px;
+  position:relative;
+}
+.recipage p{
+  margin: 35px 20px 40px;
+  font-size: 15px;
+  color: #777;
+  padding-bottom: 2%;
+  
+}
+
+.recipepage {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+  gap: 20px; 
+}
+
+.recipe-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+}
+
+.recipe-icons div {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+table {
+  width: auto; 
+  border-collapse: collapse;
+  float:left;
+  margin:5%; 
+}
+
+td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.recipepage i, p{
+  color:#b38486;
+  padding-top:2%;
+}
+.recipage tr, td{
+  color:#777;
+  padding:10px;
+}
+.instruction h3{
+  color: #777;
+  margin-top:5%;
+}
+th{
+color:#777;
+padding:20px;
+}
+
+table{
+  float:left;
+  margin:5%;
+}
+
+.instruction p{
+  color:#777;
+}
+@media(max-width:700px){
+  .instruction p{
+    margin-left:2%;
+  }
+  .footer h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+  .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-section{
+    padding-top: 2%;
+    margin:0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .icons{
+    margin:0%;
+  }
+
+}
+.error{
+  color:red;
+}
+.footer {
+  background: #b38486; 
+  color: white;
+  padding: 2%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+
+.footer-section {
+  margin: 1%;
+  padding-top:3% ;
+  min-width: 200px;
+  color: #fff;
+}
+
+.icons a {
+  color: white;
+  font-size: 14px;
+  margin: 5px 10px;
+}
+
+

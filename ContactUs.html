@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content =" width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="C:\Users\nagag\Downloads\a COZY kitchen.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="C:\Users\nagag\OneDrive - Amrita Vishwa Vidyapeetham- Chennai Campus\capstone.html">HOME</a></li>
+                        <li><a href="C:\Users\nagag\OneDrive - Amrita Vishwa Vidyapeetham- Chennai Campus\About capstone.html">ABOUT</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+            </nav>
+        <h1>Contact Us</h1>
+        </section>
+
+<!-------about-us-content-------->
+
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>Get in Touch with Us!</h1>
+                    <p>We’d love to hear from you! Whether you have questions, feedback, or suggestions, feel free to reach out to us. Fill out the form below, and we’ll get back to you as soon as possible. Your thoughts help us improve and create a better experience for you!</p>
+                </div>
+               
+            </div>
+            <div class="about-col">
+                <form  id="Form" onsubmit="return validateForm()">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <span id="nameError" class="error"></span>
+                    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <span id="emailError" class="error"></span>
+                    
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+
+<!-----footer----->
+
+
+<section class="footer">
+    <!-- 1. Follow Us Section -->
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <p>Stay updated with our latest content!</p>
+      <div class="icons">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <!-- Add more if needed (TikTok, YouTube, etc.) -->
+      </div>
+    </div>
+  
+    <div class="footer-section">
+        <h4>Get Free Recipes!</h4>
+        <p>Weekly recipes sent to your inbox. No spam, just flavor.</p>
+        <form class="recipe-form">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit">Send Me Recipes</button>
+        </form>
+      </div>
+    
+
+    
+<!----JavaScript for toggle menu----->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showmenu(){
+                navLinks.style.right = "0";
+            }
+            function hidemenu(){
+                navLinks.style.right = "-200px";
+            }
+
+            function validateForm(){
+                var name = document.getElementById("name").value.trim();
+                var email = document.getElementById("email").value.trim();
+                var isValid = true;
+
+                var namePattern = /^[A-Za-z\s]+$/;
+
+                if(!namePattern.test(name)|| name===""){
+                    document.getElementById("nameError").innerText = "Enter a valid name";
+                    isVlid=false;
+                }
+                else{
+                    document.getElementById("nameError").innerText = "";
+                }
+
+                var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if(!emailPattern.text(email)){
+                    document.getElementById("emailError").innerText = "Invalid Email";
+                    isValid = false;
+                }
+                else{
+                    document.getElementById("emailError").innerText="";
+                }
+                
+    if (Valid) {
+        // Submit or process the form here, example: open mail manually
+        const message = document.getElementById("message").value;
+        const mailtoLink = `mailto:nagasaisreegummadi@gmail.com?subject=Feedback from ${name}&body=${message}%0A%0AFrom: ${name}%0AEmail: ${email}`;
+        window.location.href = mailtoLink;
+    }
+
+    return false; // Prevent default form submission
+}
+
+document.getElementById("Form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    validateForm();
+});
+            
+        </script>
+    
+    </body>
+</html>

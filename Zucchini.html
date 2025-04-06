@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <html>
+    <head>
+        <meta name="viewport" content =" width=device-width, initial-scale=1.0">
+        <title>Zucchini Pesto Pasta</title>
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    </head>
+    <body>
+        <section class="top">
+            <nav>
+                <a href="index.html"><img src="C:\Users\nagag\Downloads\a COZY kitchen.png"></a>
+                <div class="nav2-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="C:\Users\nagag\OneDrive - Amrita Vishwa Vidyapeetham- Chennai Campus\capstone.html">HOME</a></li>
+                        <li><a href="C:\Users\nagag\OneDrive - Amrita Vishwa Vidyapeetham- Chennai Campus\About capstone.html">ABOUT</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="C:\Users\nagag\OneDrive - Amrita Vishwa Vidyapeetham- Chennai Campus\ContactUs.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+            </nav>
+        </section>
+        <section class="recipage">
+            <img src="C:\Users\nagag\OneDrive\Documents\Zucchini.png">
+            <h1>Zucchini Noodles with Pesto and Grilled Chicken</h1><br>
+            <p>Zucchini Noodles with Pesto and Grilled Chicken is a light, flavorful dish that swaps traditional pasta for spiralized zucchini, coated in fresh basil pesto and topped with juicy grilled chicken. This healthy, low-carb meal is packed with vibrant flavors and perfect for a quick, satisfying dinner.</p>
+        </section>
+        <section class="recipepage">
+            <div class="recipe-icons">
+                <div><i class="fa-solid fa-clock"></i><p>Prep-time: 10min</p></div>
+                <div><i class="fa-solid fa-bowl-food"></i><p>Cook-time: 15min</p></div>
+                <div><i class="fa-solid fa-utensils"></i><p>Servings: 2</p></div>
+            </div>
+        </section>
+        <section>
+            <table>
+                <tr><th colspan="2">Ingredients</th></tr>
+                <tr><td>1.</td><td>2 medium zucchinis (spiralized into noodles)</td></tr>
+                <tr><td>2.</td><td>2 boneless, skinless chicken breasts</td></tr>
+                <tr><td>3.</td><td>2 tbsp olive oil</td></tr>
+                <tr><td>4.</td><td>1/2 cup basil pesto (homemade or store-bought)</td></tr>
+                <tr><td>5.</td><td>1/4 cup cherry tomatoes, halved</td></tr>
+                <tr><td>6.</td><td>2 tbsp grated Parmesan cheese</td></tr>
+                <tr><td>7.</td><td>Salt & pepper, to taste</td></tr>
+            </table>
+        </section>
+        <section class="instruction">
+            <h3>Instructions:</h3><br>
+               <p>Preheat grill or pan over medium heat. Brush chicken with olive oil, season with salt and pepper, and grill for 6-7 minutes per side until fully cooked. Slice into strips.<br><br>
+
+                In a pan, heat 1 tbsp olive oil and sauté the zucchini noodles for 2 minutes until just tender.<br><br>
+                
+                Remove from heat and toss with pesto until evenly coated.<br><br>
+                
+                Top with sliced grilled chicken and cherry tomatoes.<br><br>
+                
+                Sprinkle with Parmesan cheese and serve immediately. Enjoy!!</p><br><br><br><br><br><br>
+        </section>
+
+        <!----footer---->
+        <section class="footer">
+            <h4>Follow us</h4>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </section>
+        <!----JavaScript for toggle menu----->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showmenu(){
+                navLinks.style.right = "0";
+            }
+            function hidemenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

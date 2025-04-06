@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content =" width=device-width, initial-scale=1.0">
+        <title>Avocado Toast</title>
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    </head>
+    <body>
+        <section class="top">
+            <nav>
+                <a href="index.html"><img src="C:\Users\nagag\Downloads\a COZY kitchen.png"></a>
+                <div class="nav2-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="C:\Users\nagag\OneDrive - Amrita Vishwa Vidyapeetham- Chennai Campus\capstone.html">HOME</a></li>
+                        <li><a href="C:\Users\nagag\OneDrive - Amrita Vishwa Vidyapeetham- Chennai Campus\About capstone.html">ABOUT</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="C:\Users\nagag\OneDrive - Amrita Vishwa Vidyapeetham- Chennai Campus\ContactUs.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+            </nav>
+        </section>
+        <section class="recipage">
+            <img src="C:\Users\nagag\OneDrive - Amrita Vishwa Vidyapeetham- Chennai Campus\Pictures\Avocadotoast.jpg">
+            <h1>Avocado Toast with Egg</h1><br>
+            <p>Avocado Toast with Egg is a simple yet delicious breakfast or snack featuring creamy mashed avocado spread over crispy toasted bread, topped with a perfectly cooked egg. Whether poached, fried, or scrambled, the egg adds protein and richness, making this dish both nutritious and satisfying. Seasoned with salt, pepper, and optional toppings like chili flakes, feta, or microgreens, it’s a versatile meal perfect for any time of day! </p>
+        </section>
+        <section class="recipepage">
+            <div class="recipe-icons">
+                <div><i class="fa-solid fa-clock"></i><p>Prep-time: 5min</p></div>
+                <div><i class="fa-solid fa-bowl-food"></i><p>Cook-time: 5min</p></div>
+                <div><i class="fa-solid fa-utensils"></i><p>Servings: 1</p></div>
+            </div>
+        </section>
+        <section>
+            <table>
+                <tr><th colspan="2">Ingredients</th></tr>
+                <tr><td>1.</td><td>1 slice of whole-grain or sourdough bread</td></tr>
+                <tr><td>2.</td><td>1/2 ripe avocado</td></tr>
+                <tr><td>3.</td><td>1 egg (poached, fried, or scrambled)</td></tr>
+                <tr><td>4.</td><td>1/2 tsp lemon juice (optional)</td></tr>
+                <tr><td>5.</td><td>Salt & pepper, to taste</td></tr>
+                <tr><td>6.</td><td>Red pepper flakes or microgreens (optional, for garnish)</td></tr>
+            </table>
+            
+        </section>
+        <section class="instruction">
+            <h3>Instructions:</h3><br>
+               <p> Toast the Bread: Toast the bread until golden brown and crispy.<br><br>
+                Prepare the Avocado: Mash the avocado in a bowl with a fork, adding lemon juice, salt, and pepper.<br><br>
+                Cook the Egg: Cook the egg to your preference—poached, fried, or scrambled.<br><br>
+                Assemble the Toast: Spread the mashed avocado on the toast, then place the cooked egg on top.<br><br>
+                Garnish & Serve: Sprinkle with red pepper flakes, microgreens, or extra seasoning. Serve immediately!</p><br><br><br><br>
+        </section>
+    <!----footer---->
+    <section class="footer">
+        <h4>Follow Us</h4>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </section>
+    <!----JavaScript for toggle menu----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu(){
+            navLinks.style.right = "0";
+        }
+        function hidemenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    </body>
+</html>
